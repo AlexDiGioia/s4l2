@@ -302,16 +302,18 @@ button {
   font-weight: bold;
 }
 
-.fa-squqre-caret-up{
-  color: orange;
-}
 .contIconRight{
-  background-color: #d3d3d3;
+  background-color: #d3d3d39f;
   display: inline-block;
   font-size: 2.2rem;
   padding: 8px 15px;
-
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.596) ;
+  border-radius: 5px;
+  border: solid white 2px;
+  z-index: 2;
+  position: fixed;
 }
+
 
 .contIconRight i{
   display: inline-block;
@@ -319,12 +321,31 @@ button {
 
 }
 
-
 @media screen and (min-width: 500px) {
   input {
     display: inline-block;
     width: 70%;
   }
+
+  #plus{
+    position: fixed;
+    top:reset;
+    bottom: 11.5rem;
+    left: 92%;
+  }
+  
+  #calendar{
+    position: fixed;
+    bottom:7rem;
+    left: 92%;
+  }
+  
+  #up{
+    position: fixed;
+    bottom:2.5rem;
+    left: 92%;
+  }
+
 }
 @media screen and (min-width: 700px) {
   input {
@@ -379,6 +400,24 @@ footer {
   footer {
     padding: 1em 12em;
   }
+  #plus{
+    position: fixed;
+    bottom:54rem;
+    left: 96%;
+  }
+  
+  #calendar{
+    position: fixed;
+    bottom:9rem;
+    left: 96%;
+  }
+  
+  #up{
+    position: fixed;
+    bottom:3rem;
+    left: 96%;
+  }
+
 }
 
 footer a {
@@ -393,6 +432,9 @@ footer a {
     margin-left: auto;
     margin-right: auto;
   }
+
+  
+  
 }
 
 @media print {
